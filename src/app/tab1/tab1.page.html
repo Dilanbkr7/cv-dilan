@@ -1,17 +1,159 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <main class="pagina">
+
+    <!-- ETIQUETA SUPERIOR -->
+    <div class="etiqueta">
+      <span class="punto"></span>
+      CURRÍCULUM DIGITAL · 26-B
+    </div>
+
+    <!-- PRESENTACION -->
+    <section class="perfil">
+
+      <div class="foto-contenedor">
+        <img
+          src="assets/perfil.jpeg"
+          alt="Fotografía de perfil de Dilan"
+          class="foto-perfil"
+        />
+      </div>
+
+      <div class="perfil-info">
+
+        <p class="saludo">HOLA, SOY</p>
+
+        <h1>
+          Dilan Artemio<br>
+          Obando Suarez
+        </h1>
+
+        <div class="carrera">
+          Estudiante de Desarrollo de Software
+        </div>
+
+        <p class="descripcion">
+          Me interesa el desarrollo de aplicaciones
+          web y móviles, la programación y la creación
+          de soluciones tecnológicas que permitan
+          resolver problemas reales.
+        </p>
+
+        <div class="periodo">
+          <span>PERÍODO ACADÉMICO</span>
+          <strong>26-B</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="seccion">
+
+      <div class="titulo-seccion">
+        <span class="numero-seccion">01</span>
+        <h2>Sobre mí</h2>
+      </div>
+
+      <div class="tarjeta">
+
+        <p>
+          Soy estudiante de Desarrollo de Software
+          con interés en la programación, el desarrollo
+          web y las aplicaciones móviles.
+        </p>
+
+        <p>
+          Durante mi formación he trabajado en
+          proyectos que utilizan diferentes tecnologías,
+          herramientas de desarrollo y metodologías
+          para construir soluciones funcionales.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- AREAS DE INTERES -->
+    <section class="seccion">
+
+      <div class="titulo-seccion">
+        <span class="numero-seccion">02</span>
+        <h2>Áreas de interés</h2>
+      </div>
+
+      <div class="intereses">
+
+        <div class="interes">
+          <span class="interes-icono">01</span>
+          <strong>Desarrollo web</strong>
+        </div>
+
+        <div class="interes">
+          <span class="interes-icono">02</span>
+          <strong>Aplicaciones móviles</strong>
+        </div>
+
+        <div class="interes">
+          <span class="interes-icono">03</span>
+          <strong>Backend y bases de datos</strong>
+        </div>
+
+        <div class="interes">
+          <span class="interes-icono">04</span>
+          <strong>Ingeniería de software</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ENLACES PROFESIONALES -->
+    <section class="seccion">
+
+      <div class="titulo-seccion">
+        <span class="numero-seccion">03</span>
+        <h2>Conecta conmigo</h2>
+      </div>
+
+      <div class="enlaces">
+
+        <a
+          href="https://github.com/Dilanbkr7"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="enlace"
+        >
+          <div>
+            <strong>GitHub</strong>
+            <span>Mis repositorios y proyectos</span>
+          </div>
+          <span class="flecha">↗</span>
+        </a>
+
+        <a
+          href="https://ec.linkedin.com/in/dilan-obando-541178235"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="enlace"
+        >
+          <div>
+            <strong>LinkedIn</strong>
+            <span>Mi perfil profesional</span>
+          </div>
+          <span class="flecha">↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+    <footer>
+      DILAN OBANDO · DESARROLLO DE SOFTWARE · 26-B
+    </footer>
+
+  </main>
+
 </ion-content>

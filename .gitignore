@@ -1,70 +1,69 @@
-# Specifies intentionally untracked files to ignore when using Git
-# http://git-scm.com/docs/gitignore
+# Dependencias (no subir)
+/node_modules/
+/modules/
+modules/
 
-*~
-*.sw[mnpcod]
-.tmp
-*.tmp
-*.tmp.*
-UserInterfaceState.xcuserstate
+# Compilación web y cachés
+/www/
+/dist/
+/coverage/
+/.angular/
+/.ionic/
+/.sourcemaps/
+/.versions/
+/tmp/
+/out-tsc/
+/.nx/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
 $RECYCLE.BIN/
 
-*.log
-log.txt
-
-
-/.sourcemaps
-/.versions
-/coverage
-
-# Ionic
-/.ionic
-/www
-/platforms
-/plugins
-
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
-
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
-
-# IDEs and editors
+# Entornos de desarrollo
 .idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-project
-*.sublime-workspace
-
-# Visual Studio Code
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
+.history/
 
+# Android / Gradle - mantener codigo nativo, excluir compilados
+/android/.gradle/
+/android/.idea/
+/android/.kotlin/
+/android/local.properties
+/android/build/
+/android/app/build/
+/android/.cxx/
+/android/app/.cxx/
+/android/app/src/main/assets/public/
+/android/app/src/main/assets/capacitor.config.json
+/android/app/src/main/assets/capacitor.plugins.json
 
-# Miscellaneous
-/.angular
-/.angular/cache
-.sass-cache/
-/.nx
-/.nx/cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+# Paquetes generados (no incluir APK en Git)
+*.apk
+*.aab
 
-# System files
-.DS_Store
-Thumbs.db
+# Credenciales y claves de firma
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+/android/key.properties
+
+# Otros temporales
+*.tmp
+*.swp
+*~
+
+# El informe se entrega por separado, no en GitHub
+/documentacion/
+*.docx
+*.pdf

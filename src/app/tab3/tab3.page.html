@@ -1,17 +1,118 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <main class="pagina">
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+      <span class="etiqueta">MI PORTAFOLIO</span>
+
+      <h1>Proyectos</h1>
+
+      <p>
+        Una selección de proyectos de desarrollo
+        web, aplicaciones móviles y programación.
+      </p>
+
+      <div class="contador-proyectos">
+        <strong>{{ proyectos.length }}</strong>
+        <span>Proyectos destacados</span>
+      </div>
+
+    </header>
+
+    <!-- LISTADO -->
+    <section class="seccion">
+
+      <div
+        class="proyecto"
+        *ngFor="let proyecto of proyectos; let i = index"
+      >
+
+        <div class="proyecto-superior">
+
+          <span class="numero">
+            {{ (i + 1).toString().padStart(2, '0') }}
+          </span>
+
+          <span class="categoria">
+            {{ proyecto.categoria }}
+          </span>
+
+        </div>
+
+        <h2>{{ proyecto.nombre }}</h2>
+
+        <p class="descripcion">
+          {{ proyecto.descripcion }}
+        </p>
+
+        <div class="tecnologias">
+
+          <span
+            *ngFor="let tecnologia of proyecto.tecnologias"
+          >
+            {{ tecnologia }}
+          </span>
+
+        </div>
+
+        <a
+          class="boton-repositorio"
+          [href]="proyecto.enlace"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ver repositorio en GitHub
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto">
+
+      <span class="contacto-etiqueta">
+        MÁS INFORMACIÓN
+      </span>
+
+      <h2>Conoce más de mi trabajo</h2>
+
+      <p>
+        Puedes explorar mis repositorios,
+        proyectos académicos y perfil
+        profesional en los siguientes enlaces.
+      </p>
+
+      <a
+        href="https://github.com/Dilanbkr7"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contacto-enlace"
+      >
+        Visitar mi GitHub
+        <span>↗</span>
+      </a>
+
+      <a
+        href="https://ec.linkedin.com/in/dilan-obando-541178235"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contacto-enlace"
+      >
+        Visitar mi LinkedIn
+        <span>↗</span>
+      </a>
+
+    </section>
+
+    <footer>
+      DILAN OBANDO · PORTAFOLIO DIGITAL
+    </footer>
+
+  </main>
+
 </ion-content>

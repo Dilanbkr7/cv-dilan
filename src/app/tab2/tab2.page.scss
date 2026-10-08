@@ -1,0 +1,267 @@
+
+:host {
+  display: block;
+}
+
+ion-content {
+  --background: #f7f8fa;
+  --color: #1b2433;
+}
+
+.pagina {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px 20px 45px;
+  color: #1b2433;
+  font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+  margin-bottom: 36px;
+}
+
+.etiqueta {
+  color: #3569d7;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.encabezado h1 {
+  margin: 13px 0 12px;
+  font-size: clamp(28px, 5vw, 38px);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.encabezado p {
+  max-width: 540px;
+  color: #758196;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* SECCIONES */
+
+.seccion {
+  margin-bottom: 35px;
+}
+
+.titulo-seccion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.titulo-seccion span {
+  color: #3569d7;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.titulo-seccion h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* FORMACION */
+
+.formacion {
+  background: white;
+  padding: 25px;
+  border: 1px solid #e4e8ef;
+  border-radius: 18px;
+}
+
+.formacion-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tipo {
+  color: #748197;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.periodo {
+  color: #2858bb;
+  background: #eaf1ff;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.formacion h3 {
+  margin: 22px 0 10px;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.formacion p {
+  margin: 0;
+  color: #68758a;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.formacion-pie {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #5d697c;
+}
+
+.indicador {
+  width: 8px;
+  height: 8px;
+  background: #22a270;
+  border-radius: 50%;
+}
+
+/* HABILIDADES */
+
+.grupo-habilidades {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.habilidad {
+  min-width: 0;
+  background: white;
+  padding: 22px;
+  border: 1px solid #e4e8ef;
+  border-radius: 17px;
+}
+
+.habilidad-cabecera {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.numero {
+  color: #3569d7;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.habilidad h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.habilidad p {
+  color: #778398;
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 13px 0 18px;
+}
+
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.etiquetas span {
+  padding: 7px 10px;
+  background: #f0f3f8;
+  border-radius: 7px;
+  color: #46546a;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* IDIOMAS */
+
+.idiomas {
+  display: grid;
+  gap: 12px;
+}
+
+.idioma {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  background: white;
+  border: 1px solid #e4e8ef;
+  border-radius: 15px;
+}
+
+.idioma strong {
+  font-size: 15px;
+}
+
+.idioma p {
+  margin: 6px 0 0;
+  color: #758196;
+  font-size: 12px;
+}
+
+.idioma > span {
+  background: #eef3fb;
+  color: #3569d7;
+  padding: 10px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* OBJETIVO */
+
+.objetivo {
+  background: #1d2c45;
+  color: white;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.objetivo h2 {
+  margin: 0 0 12px;
+  font-size: 19px;
+}
+
+.objetivo p {
+  color: #c5cfdd;
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+footer {
+  margin-top: 35px;
+  text-align: center;
+  color: #8c97a8;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+  .pagina {
+    padding: 24px 16px 40px;
+  }
+
+  .grupo-habilidades {
+    grid-template-columns: 1fr;
+  }
+
+  .encabezado h1 {
+    font-size: 29px;
+  }
+}

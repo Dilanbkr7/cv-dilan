@@ -1,0 +1,242 @@
+
+:host {
+  display: block;
+}
+
+ion-content {
+  --background: #f7f8fa;
+  --color: #1b2433;
+}
+
+.pagina {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px 20px 45px;
+  color: #1b2433;
+  font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+  margin-bottom: 30px;
+}
+
+.etiqueta {
+  color: #3569d7;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.encabezado h1 {
+  margin: 14px 0 10px;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.encabezado p {
+  max-width: 550px;
+  color: #758196;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.contador-proyectos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.contador-proyectos strong {
+  color: #3569d7;
+  font-size: 29px;
+}
+
+.contador-proyectos span {
+  color: #758196;
+  font-size: 13px;
+}
+
+/* PROYECTOS */
+
+.seccion {
+  display: grid;
+  gap: 15px;
+}
+
+.proyecto {
+  padding: 24px;
+
+  background: white;
+  border: 1px solid #e4e8ef;
+  border-radius: 19px;
+}
+
+.proyecto-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.numero {
+  color: #3569d7;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.categoria {
+  padding: 7px 10px;
+  border-radius: 7px;
+  background: #eff3fa;
+
+  color: #64738d;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.proyecto h2 {
+  margin: 0 0 11px;
+
+  color: #1b2433;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.descripcion {
+  margin: 0 0 20px;
+
+  color: #738096;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* TECNOLOGIAS */
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 22px;
+}
+
+.tecnologias span {
+  padding: 8px 11px;
+
+  border-radius: 7px;
+  background: #f1f3f7;
+
+  color: #536179;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* BOTON GITHUB */
+
+.boton-repositorio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px;
+
+  background: #1d2c45;
+  border-radius: 11px;
+
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.boton-repositorio span {
+  font-size: 20px;
+}
+
+/* CONTACTO */
+
+.contacto {
+  margin-top: 35px;
+  padding: 26px;
+
+  background: #eaf0f9;
+  border: 1px solid #dce5f2;
+  border-radius: 19px;
+}
+
+.contacto-etiqueta {
+  color: #3569d7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.contacto h2 {
+  margin: 15px 0;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.contacto p {
+  color: #6e7d93;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.contacto-enlace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px;
+  margin-top: 10px;
+
+  background: white;
+  border: 1px solid #dce5f2;
+  border-radius: 11px;
+
+  text-decoration: none;
+  color: #1c355f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contacto-enlace span {
+  font-size: 19px;
+  color: #3569d7;
+}
+
+footer {
+  margin-top: 35px;
+  text-align: center;
+  color: #8c97a8;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+  .pagina {
+    padding: 24px 16px 40px;
+  }
+
+  .encabezado h1 {
+    font-size: 31px;
+  }
+
+  .proyecto {
+    padding: 20px;
+  }
+
+  .contacto {
+    padding: 20px;
+  }
+}
