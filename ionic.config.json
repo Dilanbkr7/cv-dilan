@@ -1,0 +1,7 @@
+{
+  "name": "cv-dilan",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
